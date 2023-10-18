@@ -18,12 +18,39 @@ img {
   align-self: center;
 }
 
+@media (max-width: 375px) {
+  img {
+    width: 80%;
+  }
+  .qr-code {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .pop-up {
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+  }
+  .text {
+    align-self: center;
+    text-align: center;
+    width: 80%;
+    padding: 5%;
+    font-weight: normal;
+    font-size: 1rem;
+    opacity: 50%;
+  }
+}
+
 .pop-up {
   display: flex;
   flex-flow: column;
   width: 30%;
+  min-width: 350px;
   margin: auto;
-  padding: 1.5%;
+  padding: 2%;
   border-radius: 15px;
   background-color: white;
   justify-content: center;
